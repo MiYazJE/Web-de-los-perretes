@@ -1,0 +1,116 @@
+@import url(estilosGlobales.css);
+
+.icon-bar {
+    display: block;
+}
+
+.contenedor-principal {
+    margin-left: 8%;
+    padding: 5px;
+    background: black;
+    width: 80%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #08298A;
+    height: 100%;
+}
+
+.caja {
+    margin: 5px;
+    width: 24%;
+    height: 100%;
+}
+
+@media screen and (max-width:1450px) {
+    .caja {
+        width: 40%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .caja {
+        width: 90%;
+    }
+}
+
+
+.caja h2 {
+    padding: 10px 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    background: #0B0B3B;
+}
+
+.imagen {
+    height: 80px;
+    display: flex;
+}
+.imagen span {
+    font-size: 40px;
+    color: white;
+    margin: auto;   
+}
+
+.azul {
+    background: #2E9AFE;
+}
+.verde {
+    background: #01DFD7;
+}
+.rosa {
+    background: #DF01A5;
+}
+.amarillo {
+    background: #FACC2E;
+}
+
+.caracteristicas {
+    padding: 10px 0px;
+    background: white;
+    width: 100%;
+}
+
+.caracteristicas span {
+    margin: auto;
+    line-height: 25px;
+    display: table;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.link {
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.linkAzul {
+    background: #2E9AFE;
+}
+.linkVerde {
+    background: #01DFD7;
+}
+.linkRosa {
+    background: #DF01A5;
+}
+.linkAmarillo {
+    background: #FACC2E;
+}
+
+@media screen and (max-width: 675px) {
+    .icon-bar {
+        display: none;
+    }
+}
