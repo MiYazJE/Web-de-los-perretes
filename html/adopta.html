@@ -11,8 +11,27 @@
 
 	<!-- JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.caja-perros').fadeIn(2000);   
+            
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > 500) {
+                    $('.boton-ir-arriba').fadeIn(500);
+		        } else {
+			        $('.boton-ir-arriba').fadeOut(500);
+                }
+            });
+            
+            $('.boton-ir-arriba').click(function() {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            })
+
+        });
+    </script>
 
 	<!-- sidebar social media -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,6 +61,10 @@
         </div>
     </div>
 
+    <div class="boton-ir-arriba">
+        <img src="../img/flecha-hacia-arriba.png" alt="ir arriba">
+    </div>
+
 	<div class="icon-bar">
 	  <a href="https://es-es.facebook.com" target="blank" class="facebook"><i class="fa fa-facebook"></i></a> 
 	  <a href="https://twitter.com" target=" blank" class="twitter"><i class="fa fa-twitter"></i></a> 
@@ -49,80 +72,94 @@
 	  <a href="https://www.youtube.com" target="blank" class="youtube"><i class="fa fa-youtube"></i></a> 
 	</div>
     
-    <div class="contenedor-principal">
-        <div class="contenedor">
-            <div class="caja">
-                <h2>Basic</h2>
-                <div class="imagen azul">
-                    <span>&#36; 19</span>
-                </div>
-                <div class="caracteristicas">
-                    <span>1 Website</span> <hr>
-                    <span>1 GB Storage</span> <hr>
-                    <span>10 GB Bandwidth</span> <hr>
-                    <span>3 Month Support</span> <hr>
-                    <span>Unlimited Sub-Domains</span> <hr>
-                    <span>5 Database</span> 
-                </div>
-                <div class="linkAzul link">
-                    <a href="">Buy Now</a>
-                </div>
-            </div>
-            <div class="caja">
-                <h2>Standard</h2>
-                <div class="imagen verde">
-                    <span>&#36; 49</span>
-                </div>
-                <div class="caracteristicas">
-                    <span>5 Website</span> <hr>
-                    <span>5 GB Storage</span> <hr>
-                    <span>50 GB Bandwitch</span> <hr>
-                    <span>6 Month Support</span> <hr>
-                    <span>Unlimited Sub-Domains</span> <hr>
-                    <span>10 Database</span> 
-                </div>
-                <div class="linkVerde link">
-                    <a href="">Buy Now</a>
-                </div>
-            </div>
-            <div class="caja">
-                <h2>Premium</h2>
-                <div class="imagen rosa">
-                    <span>&#36; 69</span>
-                </div>
-                <div class="caracteristicas">
-                    <span>20 Website</span> <hr>
-                    <span>200 GB Storage</span> <hr>
-                    <span>9 GB Bandwitch</span> <hr>
-                    <span>9 Month Support</span> <hr>
-                    <span>Unlimited Sub-Domains</span> <hr>
-                    <span>50 Database</span> 
-                </div>
-                <div class="linkRosa link">
-                    <a href="">Buy Now</a>
-                </div>
-            </div>
-            <div class="caja">
-                <h2>Profesional</h2>
-                <div class="imagen amarillo">
-                    <span>&#36; 99</span>
-                </div>
-                <div class="caracteristicas">
-                    <span>Unlimited Website</span> <hr>
-                    <span>100 GB Storage</span> <hr>
-                    <span>Unlimited Bandwitch</span> <hr>
-                    <span>1 year Support</span> <hr>
-                    <span>Unlimited Domains</span> <hr>
-                    <span>Unlimited Database</span> 
-                </div>
-                <div class="linkAmarillo link">
-                    <a href="">Buy Now</a>
-                </div>
-            </div>
-        </div>
+
+    <div class="wrap-header">
+        <h1>Perros en Adopción</h1>
     </div>
 
-    <div class="clearfix"></div>
+    <div class="wrap">
+        <section>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure> 
+                </div>
+                <div class="descripcion-perro">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>
+                    <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure>
+                </div>
+                <div class="descripcion-perro">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>
+                    <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure>
+                </div>
+                <div class="descripcion-perro">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>
+                    <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure>
+                </div>
+                <div class="descripcion-perro">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>
+                    <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure>
+                </div>
+                <div class="descripcion-perro">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>
+                    <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+            <div class="caja-perros">
+                <div class="nombre">
+                    <h2 class="nombre-perro">Carlitos</h2>
+                    <span>Humano</span>
+                </div>
+                <div class="imagen">
+                    <figure><img src="../img/perros-hipo-2.jpg" alt="" tittle=""></figure>
+                </div>
+                <div class="descripcion-perro">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis perferendis </p>  
+                      <a href="#"><button type="button" class="info">Más Informacion</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <div class="contenedor-footer">
         <div class="footer">

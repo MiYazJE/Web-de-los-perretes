@@ -81,7 +81,7 @@ button:hover {
 .presentacion {
 	box-sizing: border-box;
 	width: 60%;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 25px;
 	padding: 0px 10px 0px 10px;
 	height: auto;
@@ -98,18 +98,19 @@ button:hover {
 }
 
 .hueso {
-	background: url(/img/hueso-para-perros.png) no-repeat  10px;
-	height: 54px;
+	background: url("../img/hueso-para-perros.png") no-repeat left 17px;
+	height: 40px;
 	padding-left: 44px;
-	padding-top: 3px;
+	padding-top: 5px;
 }
 
 .hueso:first-child {
-	margin-top: 0px;
+	margin-top: 10px;
 }
 
 .hueso:last-child {
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1370px) {
@@ -135,6 +136,15 @@ button:hover {
 @media screen and (max-width: 655px) {
 	.hueso:last-child {
 		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.hueso:first-child {
+		margin-bottom: 40px;
+	}
+	.hueso:last-child {
+		margin-bottom: 50	px;
 	}
 }
 

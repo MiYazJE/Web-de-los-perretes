@@ -217,7 +217,7 @@ nav.black ul li a {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	background: rgba(77, 77, 77, 0.70)
+	background: rgba(77, 77, 77, 0.70);
 }
 
 /* Style the icon bar links */
@@ -317,4 +317,20 @@ nav.black ul li a {
 ::-webkit-scrollbar-thumb {
 	background: #ff9d00;
 	border-radius: 5px;
+}
+
+.boton-ir-arriba {
+    display: none;
+    width: 32px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(77, 77, 77, 0.70);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.boton-ir-arriba:hover {
+    background: black;
+    color: white;
 }
