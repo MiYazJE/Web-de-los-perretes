@@ -16,6 +16,19 @@
   	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.slider').bxSlider({
+				responsive: true,
+				slideWidth: 500,
+				controls: false,
+				pager: false,
+				auto: true,
+				speed: 1000,
+				adaptiveHeight: true,
+			});
+		});
+	</script>
 
 	<!-- sidebar social media -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +42,7 @@
 		<ul class="menu">
 			<li><a href="index.html">INICIO</a>
 			<li><a href="html/adopta.html">ADOPTA!</a>
-			<li><a href="#">NOTICIAS</a></li>
+			<li><a href="html/noticias.html">NOTICIAS</a></li>
 			<li><a href="html/contacto.html">CONTACTO</a>
 		</ul>
 	</nav>
@@ -51,7 +64,7 @@
 		<div class="menu">
 			<a href="index.html">INICIO</a>
 			<a href="/html/adopta.html">ADOPTA!</a>
-			<a href="#">NOTICIAS</a>
+			<a href="/html/noticias.html">NOTICIAS</a>
 			<a href="/html/contacto.html"><span>CONTACTO</span></a>
 		</div>
 	</div>
@@ -59,7 +72,7 @@
 	<div class="imagen">
 		<div class="header">
 			<h1 class="titulo">Tu alma gemela te esta esperando<br>ADOPTA ME</h1>
-			<a href="html/noticias.html"><button class="boton">INFORMATE</button></a>
+			<a href="html/adopta.html"><button class="boton">ADOPTAR</button></a>
 		</div>
 	</div>
 
