@@ -14,9 +14,10 @@
     width: 70%;
     position: absolute;
     top: 15%;
-    left: 14%;
+    left: 15%;
     border-bottom: 3px solid #111;
 }
+
 .wrap-header h1 {
     text-align: center;
     font-size: 50px;
@@ -25,7 +26,7 @@
 .wrap {
     width: 95%;
     height: auto;
-    margin: 300px 0px 10px 0px;
+    margin: 350px 0px 10px 0px;
     padding: 20px;
 }
 

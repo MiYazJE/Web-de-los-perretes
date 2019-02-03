@@ -1,0 +1,44 @@
+@import url(estilosGlobales.css);
+
+body {
+    background: #e5e5e5;
+}
+
+.icon-bar {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial,sans-serif;
+}
+
+.section {
+    z-index: 0;
+    width: 70%;
+    margin-top: 100px;
+    background: white;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #666;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.section img {
+    width: 100%;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #111;
+}
+.titulo hr {
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-bottom: solid 1px;
+    width: 70%;
+}

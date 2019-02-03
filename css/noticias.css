@@ -1,5 +1,9 @@
 @import url(estilosGlobales.css);
 
+.icon-bar {
+    display: block;
+}
+
 .wrap-noticias {
     width: 70%;
     margin: 150px 0px 50px 12%;
@@ -9,7 +13,7 @@
     flex-flow: column;
 }
 
-.caja-noticias {
+.posts {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -80,8 +84,12 @@
     margin-right: 5px;
 }
 
+.contenido {
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 945px) {
-    .caja-noticias {
+    .posts {
         flex-direction: column;
     }
 }

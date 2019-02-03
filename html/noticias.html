@@ -11,7 +11,32 @@
 
 	<!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/moment.js"></script>
+
+    <!-- Rellena los posts desde ahi -->
+    <script src="../js/posts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.caja-perros').fadeIn(2000);   
+            
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > 500) {
+                    $('.boton-ir-arriba').fadeIn(500);
+		        } else {
+			        $('.boton-ir-arriba').fadeOut(500);
+                }
+            });
+            
+            $('.boton-ir-arriba').click(function() {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            })
+
+        });
+    </script>
+
 
 	<!-- sidebar social media -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,119 +77,8 @@
 	  <a href="https://www.youtube.com" target="blank" class="youtube"><i class="fa fa-youtube"></i></a> 
 	</div>
 
-    <div class="wrap-noticias">
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-            
-            <div class="texto">
-                <div class="tipo">
-                    <span>Tecnologia</span>
-                </div>
-                <div class="titular">
-                   <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-
-            <div class="texto">
-                <div class="tipo">
-                    <span>Animales</span>
-                </div>
-                <div class="titular">
-                    <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-            <div class="texto">
-                <div class="tipo">
-                    <span>Naturaleza</span>
-                </div>
-                <div class="titular">
-                    <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-            <div class="texto">
-                <div class="tipo">
-                    <span>Naturaleza</span>
-                </div>
-                <div class="titular">
-                    <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-            <div class="texto">
-                <div class="tipo">
-                    <span>Naturaleza</span>
-                </div>
-                <div class="titular">
-                    <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-        <div class="caja-noticias">
-            <div class="noticias-imagen">
-                <img src="../img/imagenSection.jpg" alt="noticia1">
-            </div>
-            <div class="texto">
-                <div class="tipo">
-                    <span>Naturaleza</span>
-                </div>
-                <div class="titular">
-                    <a href=""><h2>Titulo de Prueba frgtfrgtrhrtw</h2></a>
-                </div>
-                <div class="estado">
-                    <span class="fecha">30 enero 2019</span>
-                    <span class="comentarios">0 Comentarios</span>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, laudantium quidem ab provident pariatur ipsa nisi voluptate quos laboriosam delectus consectetur rem numquam! Perferendis iste distinctio in assumenda reprehenderit quas.</p>
-            </div>
-        </div>
-    </div>
-
+    <!-- Noticas cargadas desde posts.js -->
+    <div class="wrap-noticias"></div>
 
     <div class="contenedor-footer">
         <div class="footer">

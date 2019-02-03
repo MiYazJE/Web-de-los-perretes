@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ADOPTA</title>
+    <link rel="stylesheet" href="../../css/noticia-contenido.css">
+
+	<!-- FUENTES -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.caja-perros').fadeIn(2000);   
+            
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > 500) {
+                    $('.boton-ir-arriba').fadeIn(500);
+		        } else {
+			        $('.boton-ir-arriba').fadeOut(500);
+                }
+            });
+            
+            $('.boton-ir-arriba').click(function() {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            })
+
+        });
+    </script>
+
+
+	<!-- sidebar social media -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<nav class="nav black">
+		<div class="logo">
+			<a href="../html/adopta.html">ADOPTA ME</a>
+		</div>
+		<ul class="menu">
+			<li><a href="../../index.html">INICIO</a>
+			<li><a href="../adopta.html">ADOPTA!</a>
+            <li><a href="../noticias.html">NOTICIAS</a></li>
+			<li><a href="../contacto.html">CONTACTO</a>
+		</ul>
+    </nav>
+
+    <div class="navResponsive">
+        <label class="menu-toggle" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="../../index.html">INICIO</a>
+            <a href="../adopta.html">ADOPTA!</a>
+            <a href="../noticias.html">NOTICIAS</a>
+            <a href="../contacto.html"><span>CONTACTO</span></a>
+        </div>
+    </div>
+
+    <div class="boton-ir-arriba">
+        <img src="../../img/flecha-hacia-arriba.png" alt="ir arriba">
+    </div>
+
+	<div class="icon-bar">
+	  <a href="https://es-es.facebook.com" target="blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+	  <a href="https://twitter.com" target=" blank" class="twitter"><i class="fa fa-twitter"></i></a> 
+	  <a href="https://www.google.com" target="blank" class="google"><i class="fa fa-google"></i></a> 
+	  <a href="https://www.youtube.com" target="blank" class="youtube"><i class="fa fa-youtube"></i></a> 
+	</div>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="imagen">
+                <img src="../../img/pipper2.jpg" alt="">
+            </div>
+            <div class="titulo">
+                <h2>Pipper, el primer perro español "influencer" en turismo de mascotas</h2>
+                <hr>
+            </div>
+            <div class="noticia">
+                <p>Concienciar a la sociedad sobre la <strong>integraci&oacute;n de animales dom&eacute;sticos en los viajes</strong> y dar a conocer de paso los lugares tur&iacute;sticos que ya aceptan mascotas en las visitas es la misi&oacute;n de <strong>Pipper</strong>,<strong> el primer &quot;perro turista&quot; de Espa&ntilde;a</strong> que actualmente est&aacute; dando la vuelta al pa&iacute;s.<br/><br/><span class="bajo_parrafo"></span>Este Parson Russell Terrier de casi tres a&ntilde;os est&aacute; <strong>visitando los cincuenta destinos tur&iacute;sticos m&aacute;s emblem&aacute;ticos</strong> de la geograf&iacute;a espa&ntilde;ola para descubrir sobre el terreno los museos, palacios, castillos, transportes, hoteles, bares... donde los visitantes pueden ir acompa&ntilde;ados de sus mascotas.<br/><br/><span class="bajo_parrafo"></span>&quot;Se trata de una tendencia que ha llegado a Espa&ntilde;a para quedarse, aunque todav&iacute;a es primeriza en comparaci&oacute;n con otros pa&iacute;ses europeos&quot;, ha explicado a Efe Pablo Mu&ntilde;oz Gabilondo, el creador del proyecto &quot;Pipper on tour&quot;.<br/><br/><span class="bajo_parrafo"></span></p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="contenedor-footer">
+        <div class="footer">
+            <div class="caja-footer">
+                <a href="../html/contacto.html">CONTACTO</a><hr>
+                <a href="#">PREGUNTAS FREQUENTES</a><hr>
+                <a href="#">DONDE ESTAMOS?</a><hr>
+                <span>WEB DESIGN: By Ruben Saiz</span>
+            </div>
+            <div class=" caja-footer">
+                <a href="#"><img src="../../img/icon-twitter.png"></a> <a href="#">TWITTER</a> <hr>
+                <a href="#"><img src="../../img/facebook.jpg"></a> <a href="#">FACEBOOK</a> <hr>
+                <a href="#"><img src="../../img/youtube-logo.JPG"></a> <a href="#">YOUTUBE</a> <hr>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
