@@ -25,10 +25,17 @@ body {
     color: #666;
     box-sizing: border-box;
     padding: 10px;
+    margin-bottom: 20px;    
 }
 
-.section img {
+.imagen {
     width: 100%;
+    height: 50%;
+}
+
+.section img,video {
+    width: 100%;
+    cursor: pointer;
 }
 
 .titulo h2 {

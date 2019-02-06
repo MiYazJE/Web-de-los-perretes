@@ -10,40 +10,19 @@ $(document).ready(function() {
             imagen: '../img/pipper2.jpg',
             link: 'noticias/noticia-pipper.html'
         }, {
-            title: 'Titulo de prueba 2',
-            tipo: 'TECNOLOGIA', 
+            title: 'La valiente actuación de un perro policía de EEUU contra un ladrón',
+            tipo: 'PERROS', 
             fecha: 'Publicado el ' + moment().date() + ' de ' + moment().format('MMMM'), 
-            contenido: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 
-            imagen: '../img/imagenSection.jpg',
-            link: '#'
+            contenido: 'El animal permitió la detención de un sospechoso de robar un coche al abalanzarse sobre él y derribarlo',
+            imagen: '../img/perro-policia.jpg',
+            link: 'noticias/noticia-perroPolicia.html'
         }, {
-            title: 'Titulo de prueba 3',
-            tipo: 'TECNOLOGIA', 
+            title: 'El Museo del Perro abre sus puertas en Nueva York',
+            tipo: 'CULTURA', 
             fecha: 'Publicado el ' + moment().date() + ' de ' + moment().format('MMMM'), 
-            contenido: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 
-            imagen: '../img/imagenSection.jpg',
-            link: '#'
-        }, {
-            title: 'Titulo de prueba 4',
-            tipo: 'TECNOLOGIA', 
-            fecha: 'Publicado el ' + moment().date() + ' de ' + moment().format('MMMM'), 
-            contenido: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' ,
-            imagen: '../img/imagenSection.jpg',
-            link: '#'
-        }, {
-            title: 'Titulo de prueba 5',
-            tipo: 'TECNOLOGIA', 
-            fecha: 'Publicado el ' + moment().date() + ' de ' + moment().format('MMMM'), 
-            contenido: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 
-            imagen: '../img/imagenSection.jpg',
-            link: '#'
-        }, {
-            title: 'Titulo de prueba 6',
-            tipo: 'TECNOLOGIA', 
-            fecha: 'Publicado el ' + moment().date() + ' de ' + moment().format('MMMM'), 
-            contenido: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.' ,
-            imagen: '../img/imagenSection.jpg',
-            link: '#'
+            contenido: 'Abren en Nueva York un nuevo museo llamado el museo del perro, abrira sus puuertas este 8 de febrero y contendra cuadros de la época victoriana del siglo XIX.',
+            imagen: '../img/museoDelPerro2.jpg',
+            link: 'noticias/noticia-museoDelPerro.html'
         }
     ];
 
@@ -51,7 +30,7 @@ $(document).ready(function() {
         var post = `
             <div class="posts">
                 <div class="noticias-imagen">
-                    <img src="${item.imagen}" alt="noticia1">
+                    <a href="${item.link}" target="_blank"><img src="${item.imagen}" alt="noticia1"></a>
                 </div>
                 <div class="texto">
                     <div class="tipo">
