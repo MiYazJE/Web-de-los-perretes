@@ -82,10 +82,9 @@ figure {
 	background: #fff;
 	overflow: hidden;
 }
+
 .imagen img {
     width: 100%;
-}
-.imagen img {
 	-webkit-transform: rotate(15deg) scale(1.4);
 	transform: rotate(15deg) scale(1.4);
 	-webkit-transition: .3s ease-in-out;
@@ -110,6 +109,7 @@ button.info {
     border-radius: 6px;
     display: inline-block;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 button.info:hover {

@@ -49,3 +49,9 @@ body {
     border-bottom: solid 1px;
     width: 70%;
 }
+
+.wrapper-comments {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+}
